@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy-test-1:
@@ -19,7 +19,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "akhileshns-hd-test-1"
-          heroku_email: "nsakhilesh02@gmail.com"
+          heroku_email: "naccachefrederic@gmail.com"
           appdir: "tests/test-1"
           healthcheck: "https://akhileshns-hd-test-1.herokuapp.com/"
           env_file: ".env"
@@ -42,7 +42,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "akhileshns-hd-test-2"
-          heroku_email: "nsakhilesh02@gmail.com"
+          heroku_email: "naccachefrederic@gmail.com"
           appdir: "tests/test-2"
           buildpack: "https://github.com/heroku/heroku-buildpack-static.git"
           healthcheck: "https://akhileshns-hd-test-2.herokuapp.com/"
@@ -64,7 +64,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "akhileshns-hd-test-3"
-          heroku_email: "nsakhilesh02@gmail.com"
+          heroku_email: "naccachefrederic@gmail.com"
           appdir: "tests/test-3"
           usedocker: true
           healthcheck: "https://akhileshns-hd-test-3.herokuapp.com/"
@@ -85,7 +85,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "akhileshns-hd-test-4"
-          heroku_email: "nsakhilesh02@gmail.com"
+          heroku_email: "naccachefrederic@gmail.com"
           appdir: "tests/test-4"
           healthcheck: "https://akhileshns-hd-test-4.herokuapp.com/health"
           checkstring: "ok"
